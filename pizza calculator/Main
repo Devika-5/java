@@ -1,0 +1,181 @@
+ import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int Amount=0;
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter 1.normal 2.delux");
+        int a=input.nextInt();
+        if(a==1){ //normal
+            System.out.println("1->veg Rs.250  2->nonveg Rs.300");
+            int b=input.nextInt();
+            if(b==1){ //veg
+                System.out.println("Amoumt=250");
+                 Amount=250;
+                while(true){
+                    System.out.println("Add ons\n1.Toppings RS.100\n2.Bag charges RS.20\n3.water bottle RS.20\n4.ketch up Rs.5");
+                    int c=input.nextInt();
+                    switch (c){
+                        case 1:{
+                          Amount=Amount+100;
+                          System.out.println("Amount="+Amount);
+                          break;
+                        }
+                        case 2:{
+                            Amount=Amount+20;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 3:{
+                            System.out.println("How many?");
+                            int d=input.nextInt();
+                            Amount=Amount+(d*20);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 4:{
+                            System.out.println("How many packets?");
+                            int e=input.nextInt();
+                            Amount=Amount+(e*5);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+
+                    }
+                     System.out.println("Anything else press->1  no->0");
+                    int f=input.nextInt();
+                    if(f==0){
+                    break;
+                }
+                }
+            }
+            if(b==2){
+                Amount=300;
+                System.out.println("Amount=300");
+                while(true){
+                    System.out.println("Add ons\n1.Toppings\n2.Bag charges\n3.water bottle\n4.ketch up\n5.softdrinks");
+                    int c=input.nextInt();
+                    switch (c){
+                        case 1:{
+                            Amount=Amount+100;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 2:{
+                            Amount=Amount+20;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 3:{
+                            System.out.println("How many?");
+                            int d=input.nextInt();
+                            Amount=Amount+(d*20);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 4:{
+                            System.out.println("How many packets?");
+                            int e=input.nextInt();
+                            Amount=Amount+(e*5);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+
+                    }
+                    System.out.println("Anything else press->1  no->0");
+                    int f=input.nextInt();
+                    if(f==0){
+                        break;
+                    }
+                }
+            }
+
+        }
+        if(a==2){ //normal
+            System.out.println("1->veg RS.300 2->nonveg RS.350");
+            int b=input.nextInt();
+            if(b==1){ //veg
+                System.out.println("Amount=300");
+                Amount=300;
+                while(true){
+                    System.out.println("Add ons\n1.Toppings\n2.Bag charges\n3.water bottle\n4.ketch up\n5.softdrinks");
+                    int c=input.nextInt();
+                    switch (c){
+                        case 1:{
+                            Amount=Amount+100;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 2:{
+                            Amount=Amount+20;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 3:{
+                            System.out.println("How many?");
+                            int d=input.nextInt();
+                            Amount=Amount+(d*20);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 4:{
+                            System.out.println("How many packets?");
+                            int e=input.nextInt();
+                            Amount=Amount+(e*5);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+
+                    }
+                    System.out.println("Anything else press->1  no->0");
+                    int f=input.nextInt();
+                    if(f==0){
+                        break;
+                    }
+                }
+            }
+            if(b==2){
+                System.out.println("Amount=350");
+                Amount=350;
+                int f=1;
+                while(f==1){
+                    System.out.println("Add ons\n1.Toppings Rs.100\n2.Bag charges RS.20\n3.water bottle RS.20\n4.ketch up RS.5\n");
+                    int c=input.nextInt();
+                    switch (c){
+                        case 1:{
+                            Amount=Amount+100;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 2:{
+                            Amount=Amount+20;
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 3:{
+                            System.out.println("How many?");
+                            int d=input.nextInt();
+                            Amount=Amount+(d*20);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+                        case 4:{
+                            System.out.println("How many packets?");
+                            int e=input.nextInt();
+                            Amount=Amount+(e*5);
+                            System.out.println("Amount="+Amount);
+                            break;
+                        }
+
+                    }
+                    System.out.println("Anything else press->1  no->0");
+                     f=input.nextInt();
+                    if(f==0){
+                        break;
+                    }
+                }
+            }
+
+        }
+        System.out.println("Amount="+Amount);
+    }
+}
